@@ -9,5 +9,5 @@ package ec.edu.espol.mavenproject4;
  * @author Lenovo-User
  */
 public class Asignacion {
-    
+    //PENDIENTE A TERMINAR 
 }
