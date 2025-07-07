@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espol.mavenproject4;
 
-/**
- *
- * @author Lenovo-User
- */
 public class Paquete {
     private String codigo;
     private String descripcion;
@@ -25,16 +18,42 @@ public class Paquete {
         this.telefono = telefono;
     }
     
-    public String getCodigo() {
+
+    public String getCodigo(){
         return codigo;
     }
-    public String getDescripcion() {
+
+    public String getDescripcion(){
         return descripcion;
     }
+
+    public double getPeso(){
+        return peso;
+    }
+
+    public String getDestinatario(){
+        return destinatario;
+    }
+
+    public String getDireccion(){
+        return direccion;
+    }
+
+    public String getTelefono(){
+        return telefono;
+    }
+
+    @Override
     public String toString() {
         return "Paquete{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", peso=" + peso + ", destinatario=" + destinatario + ", direccion=" + direccion + ", telefono=" + telefono + '}';
     }
-    public static void registrar(Paquete p) {
-        // PENDIENTE REGISTRAR ARCHIVO TXT DEL PAQUETE
+
+    // Método para evitar duplicados de paquetes por código
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Paquete paquete = (Paquete) obj;
+        return codigo.equals(paquete.codigo);
     }
 }

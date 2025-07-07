@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package ec.edu.espol.mavenproject4;
 
-/**
- *
- * @author Lenovo-User
- */
+package ec.edu.espol.mavenproject4;
 public class Vehiculo {
     private String placa;
     private String modelo;
@@ -15,26 +7,42 @@ public class Vehiculo {
     private double capacidad;
     private boolean operativo;
 
-    public Vehiculo(String placa, String modelo, String tipo, double capacidad, boolean operativo){
+    // Constructor principal
+    public Vehiculo(String placa, String modelo, String tipo, double capacidad) {
         this.placa = placa;
         this.modelo = modelo;
         this.tipo = tipo;
         this.capacidad = capacidad;
-        this.operativo = operativo;
+        this.operativo = true;
     }
-    public String getPlaca() {
-        return placa;
+
+    public Vehiculo(String placa, String modelo, String tipo, int capacidad) {
+        this(placa, modelo, tipo, (double) capacidad);
     }
-    public boolean isoperatito() {
-        return operativo;
-    }
-    
+
+    // Getters y setters
+    public String getPlaca() { return placa; }
+    public String getModelo() { return modelo; }
+    public String getTipo() { return tipo; }
+    public double getCapacidad() { return capacidad; }
+    public boolean isOperativo() { return operativo; }
+    public void setOperativo(boolean operativo) { this.operativo = operativo; }
+
+    @Override
     public String toString() {
-        return "Vehiculo{" + "placa=" + placa + ", modelo=" + modelo + ", tipo=" + tipo + ", capacidad=" + capacidad + ", operativo=" + operativo + '}';
-    }
-    public static void registrar(Vehiculo v){
-        // PENDIENTE REGISTRAR ARCHIVO TXT DEL VEHICULO
+        return placa + "," + modelo + "," + tipo + "," + capacidad + "," + operativo;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Vehiculo vehiculo = (Vehiculo) obj;
+        return placa.equals(vehiculo.placa);
+    }
+
+    @Override
+    public int hashCode() {
+        return placa.hashCode();
+    }
 }
-

@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.espol.mavenproject4;
 
-/**
- *
- * @author Lenovo-User
- */
 public class Conductor {
     private String cedula;
     private String nombre;
@@ -23,13 +16,33 @@ public class Conductor {
         this.correo = correo;
     }
 
-    public String getCedula() {
-        return cedula;
+    public String getCedula() { 
+        return cedula; 
+    }
+    public String getNombre() { 
+        return nombre; 
+    }
+    public String getLicencia() { 
+        return licencia; 
+    }
+    public String getTelefono() { 
+        return telefono; 
+    }
+    public String getCorreo() { 
+        return correo; 
     }
 
+    @Override
     public String toString() {
-        return "Conductor{" + "cedula=" + cedula + ", nombre=" + nombre + ", licencia=" + licencia + ", telefono=" + telefono + ", correo=" + correo + '}';
+        return cedula + "," + nombre + "," + licencia + "," + telefono + "," + correo;
     }
 
-    // COMPLETAR EL CODIGO CON EL METODO REGISTRAR TXT
+    // Método evitar duplicados de conductores por cédula
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Conductor conductor = (Conductor) obj;
+        return cedula.equals(conductor.cedula);
+    }
 }
