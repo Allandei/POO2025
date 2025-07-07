@@ -1,15 +1,38 @@
-# Sistema de Rastreo Vehicular  
+# 🚚 SISTEMA DE RASTREO VEHICULAR
 
-**Sistema de gestión logística** para empresas de delivery que automatiza:  
-✅ Registro de **vehículos** y **conductores**  
-✅ Planificación de **rutas de entrega**  
-✅ Monitoreo en **tiempo real** con eventos  
-✅ Generación de **reportes automáticos**  
+## 📝 Descripción  
+Sistema de gestión para empresas de delivery que permite registrar vehículos, conductores, paquetes y rutas de entrega con seguimiento en tiempo real.  
 
----
+## 🛠 Tecnologías  
+- Java 11  
+- Maven  
+- Archivos TXT para persistencia  
 
-### 🚀 **Características clave**  
-- **Persistencia en archivos** (vehículos.txt, rutas.txt)  
-- **Menú interactivo** con 9 opciones  
-- **Validación de datos** para evitar duplicados  
-- **POO puro** con Java + Maven  
+## ⚙ Instalación  
+1. Clonar repositorio:  
+`git clone https://github.com/tu-usuario/proyecto-rastreo.git`  
+2. Compilar:  
+`mvn clean install`  
+3. Ejecutar:  
+`java -jar target/sistema-entrega.jar`  
+
+## 📋 Menú Principal  
+Registrar vehículo
+
+Registrar conductor
+
+Asignar vehículo
+
+Registrar paquete
+
+Crear ruta
+
+Iniciar rastreo
+
+Registrar evento
+
+Consultar historial
+
+Generar reporte
+
+Salir
