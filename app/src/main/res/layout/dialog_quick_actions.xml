@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acciones Rápidas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_add_vehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Agregar Vehículo"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_primary"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_add_conductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Agregar Conductor"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_accent"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_add_paquete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📦 Agregar Paquete"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_success"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_add_ruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗺️ Crear Ruta"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_warning"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/button_secondary"
+        android:textColor="@color/text_primary" />
+
+</LinearLayout>

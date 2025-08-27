@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sistema de Entrega</string>
+    
+    <!-- Navegación -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_vehiculos">Vehículos</string>
+    <string name="nav_conductores">Conductores</string>
+    <string name="nav_paquetes">Paquetes</string>
+    <string name="nav_rutas">Rutas</string>
+    
+    <!-- Dashboard -->
+    <string name="welcome_message">¡Bienvenido al Sistema de Entrega!</string>
+    <string name="stats_general">Estadísticas Generales</string>
+    <string name="system_status">Estado del Sistema</string>
+    <string name="system_features">Características del Sistema</string>
+    
+    <!-- Vehículos -->
+    <string name="vehiculos_title">Gestión de Vehículos</string>
+    <string name="add_vehiculo">Agregar Vehículo</string>
+    <string name="placa">Placa</string>
+    <string name="modelo">Modelo</string>
+    <string name="tipo">Tipo</string>
+    <string name="capacidad">Capacidad</string>
+    <string name="operativo">Operativo</string>
+    
+    <!-- Conductores -->
+    <string name="conductores_title">Gestión de Conductores</string>
+    <string name="add_conductor">Agregar Conductor</string>
+    <string name="cedula">Cédula</string>
+    <string name="nombre">Nombre</string>
+    <string name="licencia">Licencia</string>
+    <string name="telefono">Teléfono</string>
+    <string name="correo">Correo</string>
+    <string name="disponible">Disponible</string>
+    
+    <!-- Paquetes -->
+    <string name="paquetes_title">Gestión de Paquetes</string>
+    <string name="add_paquete">Agregar Paquete</string>
+    <string name="codigo">Código</string>
+    <string name="descripcion">Descripción</string>
+    <string name="peso">Peso</string>
+    <string name="destinatario">Destinatario</string>
+    <string name="direccion">Dirección</string>
+    <string name="estado">Estado</string>
+    
+    <!-- Rutas -->
+    <string name="rutas_title">Gestión de Rutas</string>
+    <string name="add_ruta">Crear Ruta</string>
+    <string name="ruta_id">ID de Ruta</string>
+    <string name="vehiculo">Vehículo</string>
+    <string name="conductor">Conductor</string>
+    <string name="fecha_creacion">Fecha de Creación</string>
+    <string name="estado_ruta">Estado de Ruta</string>
+    
+    <!-- Botones -->
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_iniciar">Iniciar</string>
+    <string name="btn_pausar">Pausar</string>
+    <string name="btn_finalizar">Finalizar</string>
+    
+    <!-- Mensajes -->
+    <string name="msg_success">Operación exitosa</string>
+    <string name="msg_error">Error en la operación</string>
+    <string name="msg_loading">Cargando...</string>
+    <string name="msg_no_data">No hay datos disponibles</string>
+    
+    <!-- Estados -->
+    <string name="estado_pendiente">Pendiente</string>
+    <string name="estado_en_progreso">En Progreso</string>
+    <string name="estado_completado">Completado</string>
+    <string name="estado_cancelado">Cancelado</string>
+    
+    <!-- Características del sistema -->
+    <string name="feature_realtime">Rastreo en tiempo real de vehículos</string>
+    <string name="feature_routes">Gestión optimizada de rutas</string>
+    <string name="feature_serialization">Serialización de datos para persistencia</string>
+    <string name="feature_threads">Operaciones asíncronas con hilos</string>
+    <string name="feature_modern_ui">Interfaz moderna y responsiva</string>
+</resources>

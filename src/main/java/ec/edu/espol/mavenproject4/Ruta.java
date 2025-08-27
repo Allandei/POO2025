@@ -16,32 +16,25 @@ public class Ruta {
         this.vehiculo = vehiculo;
         this.conductor = conductor;
     }
-
     public String getId(){
         return id;
     }
-
     public Date getFecha(){
         return fecha;
     }
-
     public List<Paquete> getPaquetes(){
         return paquetes;
     }
     
-
     public Vehiculo getVehiculo(){
         return vehiculo;
     }
-
     public Conductor getConductor(){
         return conductor;
     }
-
     public void agregarPaquete(Paquete paquete){
         paquetes.add(paquete);
     }
-
     @Override
     public String toString(){
         return id + "-" + fecha.getTime() + "-" + vehiculo.getPlaca() + "-" + conductor.getCedula();
